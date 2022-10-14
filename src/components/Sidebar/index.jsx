@@ -21,24 +21,16 @@ function Sidebar({ addDev }) {
     setTechs("");
   };
 
-  /** Serach dev in github api */
-  const searchDev = async (username) => {
-    const response = await githubApi.get(`/users/${username}`);
-    const data = response.data;
-    return {
-      avatar_url: data.avatar_url,
-      name: data.name,
-      bio: data.bio,
-      url: data.url,
-    };
-  };
-
   /** Add Dev on submit */
   const handleSubmit = (e) => {
-    const dev = searchDev(github_username);
-    console.log(dev);
+    const dev = {
+      username: github_username,
+      thechs: techs,
+      latitude: latitude,
+      longitude: longitude,
+    };
 
-    addDev(e);
+    addDev(e, dev);
     setFields();
   };
 
