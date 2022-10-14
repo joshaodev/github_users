@@ -1,15 +1,48 @@
-import "./App.css";
+import { useEffect, useState } from "react";
+//import api from "./services/api";
+import { myApi } from "./services/api";
+
 import Sidebar from "./components/Sidebar";
 import UserList from "./components/UserList";
+import Footer from "./components/Footer";
+
+import "./App.css";
 
 function App() {
+  const [devs, setDevs] = useState([]);
+
+  /** Add Devs to API */
+  const addDev = async (e) => {
+    e.preventDefault();
+
+    /*const response = await api.post("/devs", {
+      username,
+      techs,
+      latitude,
+      longitude,
+    });
+
+    */
+    console.log("Dev adicionado");
+  };
+
+  /** Get Devs from API */
+  useEffect(() => {
+    const loadDevs = async () => {
+      const response = await myApi.get("/devs");
+      setDevs(response.data);
+    };
+
+    loadDevs();
+  }, []);
+
   return (
     <div className="app">
       <div>
-        <Sidebar />
-        <UserList />
+        <Sidebar addDev={addDev} />
+        <UserList devs={devs} />
       </div>
-      <footer>&copy; 2022 | Made by joshtag</footer>
+      <Footer />
     </div>
   );
 }

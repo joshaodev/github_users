@@ -35,6 +35,12 @@ form .input-block input {
   border-bottom: 1px solid #eee;
 }
 
+form .input-block input::placeholder {
+  color: #ccc;
+  font-style: italic;
+  font-size: 0.78em;
+}
+
 form .input-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

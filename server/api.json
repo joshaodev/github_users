@@ -1,0 +1,50 @@
+{
+  "devs": [
+    {
+      "github_username": "josh",
+      "techs": "React,javascript",
+      "latitude": -8.8735498,
+      "longitude": 13.2358135,
+      "id": 1
+    },
+    {
+      "github_username": "joshdevao",
+      "techs": [
+        "Python",
+        " Reactjs"
+      ],
+      "latitude": -8.8735498,
+      "longitude": 13.2358135,
+      "id": 2
+    },
+    {
+      "github_username": "joshdevao",
+      "techs": [
+        "Python",
+        " Reactjs"
+      ],
+      "latitude": -8.8735498,
+      "longitude": 13.2358135,
+      "id": 3
+    },
+    {
+      "github_username": "new",
+      "techs": [
+        "Python",
+        " Reactjs"
+      ],
+      "latitude": -8.8735498,
+      "longitude": 13.2358135,
+      "id": 4
+    },
+    {
+      "github_username": "x",
+      "techs": [
+        "x"
+      ],
+      "latitude": -8.8735498,
+      "longitude": 13.2358135,
+      "id": 5
+    }
+  ]
+}
