@@ -18,6 +18,9 @@ function App() {
     console.log(dev);
     await api.post("/devs", dev);
     toast.success("Dev adicionado com sucesso!");
+
+    /** set dev added, to devs array to show - update list with dev added */
+    setDevs([...devs, dev]);
   };
 
   /** Get Devs from API */

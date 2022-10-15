@@ -88,7 +88,7 @@ function Sidebar({ addDev }) {
             type="text"
             name="techs"
             id="techs"
-            placeholder="Ex: Tech1,Tech2,Tech3,..."
+            placeholder="ex: ReactJS, Flutter, Django,..."
             onChange={(e) => setTechs(e.target.value)}
             value={techs}
           />
