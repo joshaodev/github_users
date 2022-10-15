@@ -33,12 +33,17 @@ form .input-block input {
   color: #666;
   border: none;
   border-bottom: 1px solid #eee;
+  transition: 500ms;
 }
 
 form .input-block input::placeholder {
   color: #ccc;
   font-style: italic;
   font-size: 0.78em;
+}
+
+form .input-block input:focus {
+  border-bottom: 1px solid #646cff;
 }
 
 form .input-group {

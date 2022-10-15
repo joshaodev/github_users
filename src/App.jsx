@@ -1,28 +1,23 @@
 import { useEffect, useState } from "react";
-//import api from "./services/api";
-import api from "./services/api";
+import { toast, ToastContainer } from "react-toastify";
+
+import { api } from "./services/api";
 
 import Sidebar from "./components/Sidebar";
 import UserList from "./components/UserList";
 import Footer from "./components/Footer";
 
 import "./App.css";
+import "react-toastify/dist/ReactToastify.min.css";
 
 function App() {
   const [devs, setDevs] = useState([]);
 
   /** Add Devs to API */
-  const addDev = async (e, dev) => {
-    e.preventDefault();
-
-    /*const response = await api.post("/devs", {
-      username: dev.username,
-      thechs: dev.techs,
-      latitude: dev.latitude,
-      longitude: dev.longitude,
-    });*/
-
-    console.log("Dev adicionado");
+  const addDev = async (dev) => {
+    console.log(dev);
+    await api.post("/devs", dev);
+    toast.success("Dev adicionado com sucesso!");
   };
 
   /** Get Devs from API */
@@ -42,6 +37,7 @@ function App() {
         <UserList devs={devs} />
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

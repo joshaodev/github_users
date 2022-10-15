@@ -1,50 +1,16 @@
 {
   "devs": [
     {
-      "github_username": "josh",
-      "techs": "React,javascript",
-      "latitude": -8.8735498,
-      "longitude": 13.2358135,
+      "github_id": 105153983,
+      "avatar_url": "https://avatars.githubusercontent.com/u/105153983?v=4",
+      "name": "Josemar Oatanha",
+      "bio": "Dev Web Junior Full-stack, mais inclinado para o front-end, gosto de aprender e sou fã de desafios.",
+      "techs": [
+        "React",
+        "Nodejs"
+      ],
+      "html_url": "https://github.com/joshaodev",
       "id": 1
-    },
-    {
-      "github_username": "joshdevao",
-      "techs": [
-        "Python",
-        " Reactjs"
-      ],
-      "latitude": -8.8735498,
-      "longitude": 13.2358135,
-      "id": 2
-    },
-    {
-      "github_username": "joshdevao",
-      "techs": [
-        "Python",
-        " Reactjs"
-      ],
-      "latitude": -8.8735498,
-      "longitude": 13.2358135,
-      "id": 3
-    },
-    {
-      "github_username": "new",
-      "techs": [
-        "Python",
-        " Reactjs"
-      ],
-      "latitude": -8.8735498,
-      "longitude": 13.2358135,
-      "id": 4
-    },
-    {
-      "github_username": "x",
-      "techs": [
-        "x"
-      ],
-      "latitude": -8.8735498,
-      "longitude": 13.2358135,
-      "id": 5
     }
   ]
 }

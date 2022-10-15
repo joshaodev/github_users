@@ -64,6 +64,12 @@ main ul .user-item {
   color: #535bf2;
 }
 
+.no-records {
+  text-align: center;
+  padding: 0.3em 0;
+  background-color: #eee;
+}
+
 /* Break Point: 950px */
 @media (max-width: 950px) {
   main {
